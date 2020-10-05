@@ -1,0 +1,214 @@
+ body{
+    margin: 0px;
+    background-color: antiquewhite;
+    font-family:'微軟正黑體';
+    font-size: 20px;  
+}
+/*--tab部分--start*/
+.tab-title{
+    text-align: center;
+    flex-wrap: wrap;
+    background-color: #00AEAE;
+    margin: 0;
+    padding-inline-start: 0;
+}
+.health{
+   
+    display: inline-block; 
+    width: 20%;
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+    margin: 0 2% ;
+
+  }
+
+.tab-title li{
+    display: inline-block; 
+    width: 20%;
+    list-style:none;
+    /*box-sizing:border-box;*/
+    /*margin: 1px;*/
+    font-weight: bold;
+    margin: 0 2% ;
+   
+}
+.tab-title a{
+    color:#000; 
+    text-decoration:none;
+    text-align: center;
+    display: inline-block;
+}
+
+.tab-title li.active{ 
+    background-color :antiquewhite;
+   
+}
+.main > .content{ 
+    clear:both; 
+    color:#000; 
+  
+}
+
+/*--tab部分--end*/
+
+/*--大醫院查詢-- start*/
+.spinner{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+}
+
+
+.selector,.search{
+    width: 20%;
+    height: 35px;
+    margin: 2% ;
+    font: 20px  bold ;
+    border: #00AEAE 1px solid;
+    border-radius: 15px;
+   
+}
+
+
+
+.search:hover{
+    background-color:	#D0D0D0;
+  
+}
+
+.list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.list table{
+    border-collapse: collapse;
+    border: 3px solid #333;
+}
+
+
+.list th{
+    background-color : #00AEAE;
+    color: #fff;
+    font-size: 30px;
+}
+
+.list td,.list th{
+   width:150px;
+   height: 30px;
+   padding: 5px;
+   border:2px solid grey;
+   text-align: center;
+}
+
+.list tr:nth-child(even){
+    background-color: #fff;
+}
+ 
+/*--大醫院查詢-- end*/
+
+/*--診所查詢-- start*/
+.clinic_main{
+    text-align: center;
+    border: 1px solid #000;
+}
+.clinic{
+    
+}
+/*--診所查詢-- end*/
+/*--院區地圖-- start*/
+.map img{
+    display: block;
+    margin: auto;
+    width: 50%;
+    height: 50%;
+    border: 2px #000 dashed;
+     
+
+}
+/*--院區地圖-- end*/
+/*--關於我們-- start*/
+.information{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.person table{
+    border: 2px solid #000;
+    border-collapse: collapse;
+    margin: 2px;
+    background-color: #fff;
+}
+
+.information th{
+    background-color:#00AEAE;
+    color: #fff;
+    padding: 1px;
+}
+.information th,td{
+    border: 1px dashed #333;
+    font-size:25px ;
+    font-weight: bold;
+    text-align: center;
+}
+.social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.social img{
+    width: 50px;
+    height: 50px;
+    margin: 20px;
+}
+
+.photo img {
+    width: 60px;
+    height: 60px;
+    
+}
+
+/*--關於我們-- end*/
+
+/*--RWD--start*/
+@media(max-width:768px)
+{
+    .selector,.search{
+       width: 45%;
+    }
+    .health{
+        width: 100%;
+    }
+}
+
+@media(max-width:375px)
+{
+   
+    .selector,.search{
+       width: 95%
+    }
+    .list td,.list th{
+        width:100px;
+        height: 20px;
+        padding: 3px;
+       
+     }
+     
+     .health{
+         width: 100%;
+     }
+     .tab-title li{
+        width: 50%;
+     }
+    
+     
+}
+/*--RWD--end*/

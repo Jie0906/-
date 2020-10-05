@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width,
+                                    user-scalable=no,
+                                    initial-scale=1.0,
+                                    maximum-scale=1.0,
+                                    minimum-scale=1.0">
+    <link rel=stylesheet href="style/main.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/tab.js"></script>
+    <script src="js/twzipcode.js"></script>
+</head>
+
+<body>
+
+
+    <div class="main">
+
+        <ul class="tab-title">
+            <span class="health">健康E把罩</span>
+            <li><a href="#tab01">大醫院查詢</a></li>
+            <li><a href="#tab02">診所查詢</a></li>
+            <li><a href="#tab03">關於我們</a></li>
+        </ul>
+
+        <div id="tab01" class="content">
+            <p>
+            <div class="spinner">
+
+                <select class="selector">
+                    <option>請選擇地區</option>
+                    <option value="Taipei">台北</option>
+                    <option value="Yunlin">雲林</option>
+                    <option value="Tainan">台南</option>
+                </select>
+
+                <select class="selector">
+                    <option>請選擇時段</option>
+                    <option value="morning">上午診</option>
+                    <option value="afternoon">下午診</option>
+                    <option value="night">晚上診</option>
+                </select>
+
+
+                <select class="selector">
+                    <option>請選擇科別</option>
+                    <option value="a">心臟科</option>
+                    <option value="b">耳鼻喉科</option>
+                    <option value="c">小兒科</option>
+                    <option value="d">皮膚科</option>
+                    <option value="e">內科</option>
+                </select>
+
+                <button class="search">搜尋 </button>
+            </div>
+
+
+
+
+            <div class="list">
+                <table>
+                    <caption>
+                        <h1>目前看診進度</h1>
+                    </caption>
+                    <tr>
+                        <th>醫院</th>
+                        <th>科別</th>
+                        <th>看診醫師</th>
+                        <th>號碼</th>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                </table>
+
+            </div>
+            </p>
+        </div>
+        <div id="tab02" class="content">
+            <p>
+            <div class="clinic_main">
+                <div>
+                    <select class="clinic">
+                        <option>縣市查詢</option>
+                        <option value="Taipei">台北</option>
+                        <option value="Yunlin">雲林</option>
+                        <option value="Tainan">台南</option>
+                    </select>
+                    <select class="clinic">
+                        <option>地區查詢</option>
+                        <option value="Taipei">區</option>
+                        <option value="Yunlin">區</option>
+                        <option value="Tainan">區</option>
+                    </select>
+                </div>
+                <select class="clinic">
+                    <option>診所科別</option>
+                    <option value="Taipei">台北</option>
+                    <option value="Yunlin">雲林</option>
+                    <option value="Tainan">台南</option>
+                </select>
+                <button class="look">查詢</button>
+            </div>
+            <div class="list">
+                <table>
+                    <caption>
+                        <h3>診所列表</h3>
+                    </caption>
+                    <tr>
+                        <th>診所名</th>
+                        <th>地址</th>
+                        <th>電話</th>
+
+                    </tr>
+                    <tr>
+                        <td><a href="file:///C:/Users/User/%E6%A1%8C%E9%9D%A2/homepage/clinic.html">xx診所</a></td>
+                        <td>XX路123號</td>
+                        <td>0978503554</td>
+
+                    </tr>
+
+                </table>
+            </div>
+
+
+
+            </p>
+        </div>
+       
+        <div id="tab03" class="content">
+            <p>
+            <div class="information">
+                <div class="person">
+                    <table>
+                        <tr>
+                            <th>姓名</th>
+                            <td>李昱杰</td>
+                            <td class="photo"><img src="icon/user.jpg"></td>
+
+                        </tr>
+                        <tr>
+                            <th>就讀學校</th>
+                            <td colspan="2">國立雲林科技大學</td>
+                        </tr>
+                        <tr>
+                            <th>科系</th>
+                            <td colspan="2">資訊工程系</td>
+                        </tr>
+
+                    </table>
+
+                    <div class="social">
+                        <a href="https://www.facebook.com/yujie.li.142/"> <img src="icon/FB-icon.png"></a>
+                        <a href=""> <img src="icon/Line-Icon.png"></a>
+                        <a href=""> <img src="icon/IG-Icon.png"></a>
+                    </div>
+                </div>
+
+                <div class="person">
+                    <table>
+                        <tr>
+                            <th>姓名</th>
+                            <td>徐浚宥</td>
+                            <td class="photo"><img src="icon/user.jpg" </td>
+
+                        </tr>
+                        <tr>
+                            <th>就讀學校</th>
+                            <td colspan="2">國立雲林科技大學</td>
+                        </tr>
+                        <tr>
+                            <th>科系</th>
+                            <td colspan="2">資訊工程系</td>
+                        </tr>
+
+                    </table>
+
+                    <div class="social">
+                        <a href="https://www.facebook.com/profile.php?id=100006299110285"> <img
+                                src="icon/FB-icon.png"></a>
+                        <a href=""> <img src="icon/Line-Icon.png"></a>
+                        <a href=""> <img src="icon/IG-Icon.png"></a>
+                    </div>
+                </div>
+
+                <div class="person">
+                    <table>
+                        <tr>
+                            <th>姓名</th>
+                            <td>陳昱綸</td>
+                            <td class="photo"><img src="icon/user.jpg"></td>
+
+                        </tr>
+                        <tr>
+                            <th>就讀學校</th>
+                            <td colspan="2"> 國立雲林科技大學</td>
+
+                        <tr>
+                            <th>科系</th>
+                            <td colspan="2">資訊工程系</td>
+                        </tr>
+
+                    </table>
+
+                    <div class="social">
+                        <a href="https://www.facebook.com/profile.php?id=100001492391018"> <img
+                                src="icon/FB-icon.png"></a>
+                        <a href=""> <img src="icon/Line-Icon.png"></a>
+                        <a href=""> <img src="icon/IG-Icon.png"></a>
+                    </div>
+                </div>
+
+            </div>
+            </p>
+        </div>
+    </div>
+
+</body>
+
+</html>
